@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import BaseStickerJSON from '../../stickers.json';
 import CategoriesJSON from '../../categories.json';
 import { BaseSticker, Category, ObtainedPhases, ObtainedSticker } from '../models/models';
 import { Storage } from '@ionic/storage';
@@ -88,8 +89,8 @@ export class StickersService {
 
     //  Popula a lista de figurinhas obtidas com figurinhas zeradas
     public async buildStarterObtainedStickers(){
-        console.log('buildStarterObtainedStickers');
-
+        this.allStickersFromJSON = BaseStickerJSON;
+        
         this.allStickersFromJSON.forEach(
             baseSticker => this.allObtainedStickers.push(
                 {
