@@ -1,0 +1,55 @@
+@import url('http://fonts.cdnfonts.com/css/qatar2022');
+
+.background{
+    --background: linear-gradient(135deg, var(--theme-color-default-3) 0%, var(--theme-color-default-2) 50%, var(--theme-color-default-1) 100%);
+}
+
+.logo-div{
+    margin-top: 10%;
+}
+
+.title-bold{
+    font-family: 'Qatar2022';
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(0%, -50%);
+}
+
+.start-button{
+    font-family: 'Qatar2022';
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    --ripple-color: var(--theme-color-default-3);
+    --background: var(--theme-color-default-1);
+    --color: var(--white);
+}
+
+.progress-bar-div{
+    margin-top: 95%;
+}
+
+.percentage-badge{
+    font-family: 'Qatar2022';
+    padding-top: 10px;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    --background: var(--golden-default);
+}
+
+.percentage-progress-bar{
+    --background: var(--white-default);
+    --progress-background: var(--golden-default);
+}

@@ -1,0 +1,21 @@
+<ion-content class="background">
+    <div class="logo-div">
+        <ion-img src="../../assets/Qatar Logo.png"></ion-img>
+        <ion-text class="title-bold">Qatar 2022<br>Album Tracker</ion-text>
+    </div>
+    <div>
+        <ion-button 
+            (click)="navigateToStickersManager()" 
+            class="start-button"
+            shape="round"
+            size="large"
+            strong="true"
+        >
+            Começar!
+        </ion-button>
+    </div>
+    <div class="progress-bar-div">
+        <ion-badge class="percentage-badge">{{(getObtainedStickersPercentage() * 100).toFixed(2)}}% concluído</ion-badge>
+        <ion-progress-bar class="percentage-progress-bar" [value]="getObtainedStickersPercentage()"></ion-progress-bar>
+    </div>
+</ion-content>
